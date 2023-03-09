@@ -374,4 +374,4 @@
 - **HTTPS**, run the solution over HTTPS to guarantee security.
 - **Pagination** to add to the endpoints that return a lot of information (for example `/api/get-all-characters` and `/api/get-all-comics`) a `limit` and `offset` to return part of the result to the user.
 - **DB** switch to a persistent storage such as PostgreSQL, so we can queries from the REST API that allows `.distinct(*fields)`.
-- **Blob storage**, to have a blob storage in order to download and store all the images there and not use for this marvel resources.
+- **Blob storage**, to have a blob storage in order to download and store all the images there and not use this marvel resources.
