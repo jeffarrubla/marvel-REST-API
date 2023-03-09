@@ -219,7 +219,7 @@
         ]
     }
     ```
-    - ***Note*** `hasAllTeammates` turns true when the comics and teammates of a character has been fetched from marvel API.
+    - ***Note*** `hasAllTeammates` turns `true` when the comics and teammates of a character has been fetched from marvel API.
     
 - **get-teammates**
     Get all the teammates a character has had.
