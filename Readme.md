@@ -15,7 +15,7 @@
 ## Design
 - `marvelAPI.py` class for handling the connection with the [Marvel API](https://developer.marvel.com/), it makes requests to different endpoints and formats the information received by the endpoints.
 
-    - **build_url_and_get_results** constructs an URL base on the parameters needed, such as ts, public key and hash required by the marvel APi, besides to query to a resource (depending on the case) to get certain information, and makes the request to the URL constructed.
+    - **build_url_and_get_results** constructs an URL base on the parameters needed, such as ts, public key and hash required by the marvel API, besides to query to a resource (depending on the case) to get certain information, and makes the request to the URL constructed.
         - Parameters 
                 *query* (required, string): endpoint with its require parameters to be consulted.
         - Returns 
