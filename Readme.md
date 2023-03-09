@@ -1,5 +1,3 @@
-
-
 # Marvel REST API Challenge
 
 ## Index
@@ -15,16 +13,16 @@
 - mysql v8.0
  
 ## Design
-- `marvelAPI.py` class for handling the connection with the [Marvel API](https://developer.marvel.com/), it makes requests to different endpoints and formats the information recieved by the endpoints.
+- `marvelAPI.py` class for handling the connection with the [Marvel API](https://developer.marvel.com/), it makes requests to different endpoints and formats the information received by the endpoints.
 
-    - **build_url_and_get_results** constructs an URL base on the parameters needed, such as ts, publick key and hash required by the marvel APi, besides to query to a resource (depending on the case) to get certain information, and makes the request to the URL constructed.
+    - **build_url_and_get_results** constructs an URL base on the parameters needed, such as ts, public key and hash required by the marvel APi, besides to query to a resource (depending on the case) to get certain information, and makes the request to the URL constructed.
         - Parameters 
                 *query* (required, string): endpoint with its require parameters to be consulted.
         - Returns 
                 *results* (list), results obtained by the request.
-    - **get_img_urls_and_info_from_object** gets image imformation from a dict.
+    - **get_img_urls_and_info_from_object** gets image information from a dict.
         - Parameters 
-                *thumbnail* (required, dict): dict with image propertils which path and extension.
+                *thumbnail* (required, dict): dict with image properties which path and extension.
         - Returns 
                 *image path* (string), path of the image including the name of the file.
                 *image extension* (string), extension of the image.
@@ -45,7 +43,7 @@
             *charactercomic_model* (required, ModelBase): charactercomic model.
         - Returns
                 *result* (list) marvel character formatted
-    - **get_and_store_comics_and_teammates** gets all the comics a character is in, based in the character id, and then iterates throught the comics, formats them, and gets all the characters (teammates) in it, formats them and stores characters, comics, creates relationship between them and updates the character that is passed as parameter.
+        - **get_and_store_comics_and_teammates** gets all the comics a character is in, based in the character id, and then iterates thought the comics, formats them, and gets all the characters (teammates) in it, formats them and stores characters, comics, creates relationship between them and updates the character that is passed as parameter.
         - Parameters 
             *character*  (object, string): character query from DB.
             *character_model* (required, ModelBase): character model.
