@@ -61,7 +61,7 @@
 - `views.py` has the endpoints that are explained in the **Endpoints** section bellow. 
 
 ## Run 
-   Please provide `PUBLIC_KEY` and `PRIVATE_KEY` on `.env.dev`
+   Please provide `PUBLIC_KEY` and `PRIVATE_KEY` on `.env.dev` file.\
    On shell do `make up`
    
 ## Tests
