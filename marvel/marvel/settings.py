@@ -85,11 +85,7 @@ DATABASES = {
         'PASSWORD': os.environ.get('MYSQL_PASSWORD',None),
         'HOST':os.environ.get('MYSQL_HOST','host.docker.internal'),
         'PORT':  os.environ.get('MYSQL_EXTERNAL_PORT',None),
-    },
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
+    },  
 }
 
 if 'test' in sys.argv:
