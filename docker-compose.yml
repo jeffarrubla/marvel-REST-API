@@ -1,0 +1,29 @@
+version: '3'
+services:
+
+  mysql:
+    image: "mysql:8.0"
+    env_file:
+      - ./.env.dev
+    ports:
+      - "33060:3306"
+    networks:
+      default:
+          aliases:
+           - mysql_img
+
+  api:
+    restart: always
+    build: ./marvel/
+    command: >
+      sh -c "python3 manage.py migrate &&
+             python3 manage.py wait_for_db &&
+             python3 manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./marvel:/marvel
+    env_file:
+      - ./.env.dev
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
