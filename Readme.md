@@ -7,7 +7,7 @@
 - [Run](#run)
 - [Tests](#tests)
 - [Endpoints](#endpoints)
-- [Improvements](#improvementsscalability)
+- [Improvements/scalability](#improvementsscalability)
 
 ## Techs
 - Django v3.2.18
