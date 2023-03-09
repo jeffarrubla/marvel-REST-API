@@ -70,7 +70,7 @@
 
 - **api/get-and-store-character**
     Gets the information, from marvel API, of a character based on the name and stores it on DB, if the character already exists on the DB returns the information of the DB.
-    *Parameter:*
+    - *Parameter:*
         - name (required, string): name of the character
     - Example of return 
     ```
@@ -90,7 +90,7 @@
  
 - **api/get-and-store-comics-and-teammates**
     Get all the comics the character belongs to (the character must be already store on DB) and gets all the characters that are in those comics.
-    *Parameter:*
+    - *Parameter:*
         - name (required, string): name of the character
     - Example of return
     ```
@@ -198,7 +198,7 @@
     
 - **api/get-character**
     Get a character information from DB
-    *Parameter:*
+    - *Parameter:*
         - name (required, string): name of the character
         
     - example of return
@@ -223,7 +223,7 @@
     
 - **get-teammates**
     Get all the teammates a character has had.
-    *Parameter:*
+    - *Parameter:*
         - name (required, string): name of the character
     - example of return
     ```
@@ -373,4 +373,3 @@
 - **HTTPS**, run the solution over HTTPS to guarantee security.
 - **Pagination** to add to the endpoints that return a lot of information (for example `/api/get-all-characters` and `/api/get-all-comics`) a `limit` and `offset` to return part of the result to the user.
 - **DB** switch to a persistent storage such as PostgreSQL, so we can queries from the REST API that allows `.distinct(*fields)`
-
