@@ -7,7 +7,7 @@
 - [Run](#run)
 - [Tests](#tests)
 - [Endpoints](#endpoints)
-- [Improvements](#improvements)
+- [Improvements](#improvementsscalability)
 
 ## Techs
 - Django v3.2.18
@@ -364,7 +364,7 @@
     }
     ```
 
-## Improvements
+## Improvements/scalability
 
 - **Rate limiting**, regulate the number of request in a period of time by user. example by endpoint allow 3 request  with a difference of 0.5 sec but only 3 times under 5 secs but only 20 times under 60 secs.
 - **Caching**, use a cache for the information most commonly queried for each endpoint, to keep the cache relevant use the strategy of keeping in the cache the most frequents used.
