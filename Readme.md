@@ -59,7 +59,7 @@
 - `views.py` has the endpoints that are explained in the **Endpoints** section bellow. 
 
 ## Run 
-   Please provide `PUBLIC_KEY` and `PRIVATE_KEY` on `.env.dev` file.\
+   Please provide `PUBLIC_KEY` and `PRIVATE_KEY` of the Marvel API on `.env.dev` file.\
    On shell do `make up`
    
 ## Tests
