@@ -63,7 +63,10 @@
    On shell do `make up`
    
 ## Tests
-  `make test`
+  - `python3 -m venv env`
+  - `source env/bin/activate`
+  - `pip install -r marvel/requirements.txt`
+  - `make test`
    
 ## Endpoints
 
